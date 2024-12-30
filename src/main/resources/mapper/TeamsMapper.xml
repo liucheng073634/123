@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.heima.mapper.TeamsMapper">
+
+
+    <select id="getById" resultType="com.heima.domain.po.TeamMember">
+            select * from team where team_id = #{id}
+    </select>
+</mapper>
